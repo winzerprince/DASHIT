@@ -15,8 +15,9 @@
         <form id="form2">
             <label for="email">Email</label>
             <input type="email" id="email" reqired><br/>
-            <label for="email">Email</label>
-            <input type="range" id="age" reqired><br />
+            <label for="age">Age</label>
+            <input type="range" id="age" min="0" max="100" oninput="output.value = age.value" reqired>
+            <output id="output"> 50</output><br />
             <label for="planets" reqired>Choose your destination</label>
             <select id="planets" name="planets">
                 <optgroups label="Habitable">
