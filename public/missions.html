@@ -2,11 +2,25 @@
 <html lang="en">
     <head>
         <title>Missions</title>
+        <link rel="stylesheet" href="css/missions.css">
     </head>
     <body>
-        <h1 style="text-align:centre">MISSIONS</h1>
+        <h1>MISSIONS</h1>
+        <p>Welcome to the DASHIT Missions page! Here you can find various missions available for signup.</p>
+        <h2>Available Missions</h2>
+        <p>We offer a range of exciting missions, including:</p>
+        <ul>
+            <li>Exploration of Mars</li>
+            <li>Research on Alpha Centauri</li>
+            <li>Survey of Kepler-186f</li>
+        </ul>
+        <h2>Frequently Asked Questions</h2>
+        <p><strong>Q: How do I sign up for a mission?</strong></p>
+        <p>A: Simply fill out the form below after signing up for an account.</p>
+        <p><strong>Q: Are there any age restrictions?</strong></p>
+        <p>A: Yes, participants must be between the ages of 18 and 100.</p>
         <hr>
-        <p>We as  <em>DASHIT</em> make it a point to make all our missions public and available for you
+        <p>We at <em>DASHIT</em> make it a point to keep all our missions public and available for you
             to signup for. Browse through our <del>suicide</del> missions catalog or fill in and submit the form 
             below to register for a mission one you have <a href="signUp.html">Signed Up</a>
         </p>
@@ -17,12 +31,12 @@
             <label for="email">Email</label>
             <input type="email" id="email" reqired><br/>
             <label for="age">Age</label>
-            <input type="range" id="age" min="0" max="100" oninput="output.value = age.value" reqired>
+            <input type="range" id="age" min="18" max="100" oninput="output.value = age.value" required>
             <output id="output"> 50</output><br />
             <label for="planets" reqired>Choose your destination</label>
             <select id="planets" name="planets">
                 <optgroup label="Habitable">
-                    <option value="Mars" selceted>Mars</option>
+                    <option value="Mars" selected>Mars</option>
                     <option value="Alpha Centauri">Alpha Centauri</option>
                     <option value="Kepler-186f">Kepler-186f</option>
                     <option value="Gliese 667 Cc">Gliese 667 Cc</option>
@@ -75,7 +89,7 @@
                 <option value="Explorer"></option>
                 <option value="Doctor"></option>
             </datalist><br/>
-            <button type="submit">Submit</button>
+            <button type="submit">Sign Up for Mission</button>
             
             
             
