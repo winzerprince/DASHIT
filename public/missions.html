@@ -2,8 +2,11 @@
 <html lang="en">
     <head>
         <title>Missions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body style="background-image:url(images/hd/rings2.jpg); background-position:center;background-size:cover " class="background-tint">
         <h1>MISSIONS</h1>
         <p>Welcome to the DASHIT Missions page! Here you can find various missions available for signup.</p>
         <h2>Available Missions</h2>
@@ -27,12 +30,11 @@
         <br/><br/><br/><br/>
 
         <form id="form2">
-            <label for="email">Email</label>
-            <input type="email" id="email" reqired><br/>
+            <input type="email" id="email" reqired placeholder="Email"><br/>
             <label for="age">Age</label>
             <input type="range" id="age" min="18" max="100" oninput="output.value = age.value" required>
             <output id="output"> 50</output><br />
-            <label for="planets" reqired>Choose your destination</label>
+            <label for="planets" reqired>Choose your destination</label><br>
             <select id="planets" name="planets">
                 <optgroup label="Habitable">
                     <option value="Mars" selected>Mars</option>
@@ -77,7 +79,7 @@
                 </optgroup>
 
             </select><br/>
-            <label for="role">Role</label>
+            <label for="role">Role</label><br>
             <input list="roles" id="role" >
             <datalist id="roles">
                 <option value="Pilot" selected></option>
@@ -87,12 +89,69 @@
                 <option value="President"></option>
                 <option value="Explorer"></option>
                 <option value="Doctor"></option>
-            </datalist><br/>
-            <button type="submit">Sign Up for Mission</button>
+            </datalist><br/><br>
+            <button  value="signup">Sign Up for Mission</button>
             
             
             
         </form>
+
+        <div>
+            <h2 style="text-align:center">Mission Exihiibtion </h2>
+            <figure style="float:left; margin-right:30px"><img src="images/hd/rocker.jpg" class="img1"><figcaption>Our first mission to 
+                Alpha Centauri had its seeds planted on the moon.
+                
+            </figcaption></figure><p style="size:5px">
+                <h2 style="text-align:centre">Mission Alpha Centauri</h2>
+                Project Base: The Moon(Lunar launch
+                complex DASH-01)<br>
+                Objective: To explore and set up base at Alph Centauri<br>
+                <h3>Mission Overview</h3><br>
+                After years of questionable research specualative engineering and a shit tone of luck,
+                Dashit announced its first interstellar expedition: Mission Alpha Centauri. This 
+                historic journey marked humanity's firts attempt to reach our closest stellar neighbour
+                wiht zero plot armor.<br>
+                "Why launch from the moon?" You may ask, the answer is simple, zero atmospheric drag
+                , zero air pollution and zero taxes. We were able to pull this impeccable feat thanks
+                to DIzz-<del>nuts</del>Quantis Hyperdrive developed by our scientists for 
+                hyperspace travel using Quantum Hyperspatial Tachyonic Propagation(QHTP).
+                
+            </p>
+            
+        </div><br><br><br>
+
+        <div >
+            <figure style="float:right; margin-left:30px"><img src="images/hd/astronaut1.jpg" class="img1">
+                <figcaption class="caption">
+                    Admiral Luna Vega on his routine space walk in preparation for the 45th mission to
+                     TrES-2b.
+            
+                </figcaption>
+            </figure>
+            <div class="credits-container">
+                <div class="credits">
+            <p style="size:5px">
+            <h2 style="text-align:centre">Space Admirals</h2>
+            Project Base: Eris X5<br>
+            Objective: To command the future of interstellar travel through Admirals and Space Captains<br>
+            <h3>Mission Overview</h3><br>
+            With the ever growing increase in space stations, outposts and bases came the
+            need for a group of highly trained incredible individuals that could command and foster
+            the ever multiplying missions and becom the lead pioneers of these missionsl. We named these folk
+            space admirals<br>
+            <h4>The Admirals: Who are they?</h4>
+            The space admirals are a hand picked group of the finest minds, leaders,and strategists at DASHIT.
+            They are not just great at commanding space stations but also traversing the chaos of space.
+            These elites are chosen for their experience, bravery, and ability to remain calm even in the
+            worst situations.</p>
+                </div>
+            </div>
+
+        </div>
+
+      
+            
+        
         
 
 

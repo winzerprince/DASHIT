@@ -3,11 +3,12 @@
 
 <head>
     <title>SignUp</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <h1 style="border: 2px tomato solid; background:rgba(228, 41, 8, 0.288); 
-    text-align:center"><i><b>SHOOT FOR THE STARS</b></i></h1>
+<body style="background-image:url(images/hd/dark_planet.jpg);background-position:center;background-size:cover" class="background-tint">
+    <h1 style=" 
+    text-align:center">SHOOT FOR THE STARS</h1>
     <p>It's time for you to fulfill that dream you always had as a kid of reaching the stars
         and exploring the vastness of the universe. We have access to over 59,483 different
         inhabitable planets and over 7 x 10<sup>56</sup> uninhabitable planets for you to travel to for
@@ -19,21 +20,22 @@
     <form id="form1" border="1">
         <p>Please fill in this form to create an account</p>
         <hr>
-        <input type="button" value="Login"><input type="button" value="Signup"><br />
-        <input type="text" id="firstName" placeholder="First Name" reqired>
+        <button value="login">Login</button> <br>
+        <input type="text" id="firstName" placeholder="First Name" reqired><br>
         <input type="text" id="lastName" placeholder="Last Name" reqired><br />
         <input type="email" id="email" placeholder="Email Address" reqired><br />
         <input type="password" id="psw" placeholder="Password" reqired><br />
         <input type="password" id="psw-rpt" placeholder="Confirm Password" reqired><br />
         <label for="profilePic">Upload a profile picture</label>
         <input type="file" id="profilePic"><br />
-        <input type="submit" value="Submit">
+        <button value="signup">SignUP</button><br />
+        
         <hr>
         <p>By filling in this form you agree to our <a href="terms.html" target="_blank">Terms and Privacy</a></p>
 
 
     </form><br/>
-    <iframe href="terms.html" width="600" height="400" title="Terms and Privacy"></iframe>
+    <iframe href="terms.html" width="600" height="400" title="Terms and Privacy" allowfullscreen loadin="lazy"></iframe>
 
 </body>
 
