@@ -1,6 +1,3 @@
-<style>
-h1{color:Yellow}
-</style>
 
 # DASHIT
 
@@ -16,6 +13,6 @@ h1{color:Yellow}
 DASHIT(Departments of Aerodynamics and Space Hyper-Intelligence) is a space agency whose mission
 is to create exceptional and sustainable technologies for the purpose of space exploration,
 space research, and space recreation and settlement.
-Using the```npm install``` command
+
 </div>
 </details>
