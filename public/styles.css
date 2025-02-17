@@ -24,14 +24,14 @@ h2 {
 
 input[type="button"],
 button {
-    background: linear-gradient(45deg, #ff33f5, #0e036d);
+    background: linear-gradient(45deg, #5d07be, #08080a);
     border: none;
     color: white;
-    font-size: 18px;
-    border-radius: 8px;
+    font-size: 20px;
+    border-radius: 3px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 15px rgb(1, 51, 216);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 15px rgb(84, 113, 228);
     position: relative;
     overflow: hidden;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -40,9 +40,8 @@ button {
 
 input[type="button"],
 button:hover {
-    background: linear-gradient(45deg, #ff33bb, #054cb6);
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(27, 99, 233, 0.89);
+    background: linear-gradient(45deg, #0bdbd1, #054cb6);
+    transform: scaleX(1.05);
     animation: pulse 1s infinite;
 
 }
@@ -54,19 +53,19 @@ button:active {
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 10px rgba(255, 242, 65, 0.7);
+        box-shadow: 0 0 10px rgba(176, 19, 248, 0.7);
     }
 
     50% {
-        box-shadow: 0 0 20px rgba(103, 255, 43, 0.9);
+        box-shadow: 0 0 20px rgba(35, 129, 252, 0.9);
     }
 
     100% {
-        box-shadow: 0 0 10px rgba(231, 235, 7, 0.904);
+        box-shadow: 0 0 10px rgba(42, 7, 243, 0.904);
     }
 
 }
-
+.input,
 input[type="email"],
 select,
 datalist,
@@ -91,7 +90,7 @@ input[type="password"]:focus,
 input[type="text"]:focus {
     border-color: linear-gradient(45deg, #ff33bb, #054cb6);
     outline: none;
-    box-shadow: 0 4px 15px 5px rgba(4, 74, 206, 0.925);
+    box-shadow: 0 4px 15px 2px rgba(160, 186, 235, 0.658);
 
 
 }
@@ -148,6 +147,7 @@ input[type="range"]::-moz-range-thumb {
     transition: opacity 1s;
     z-index: 1;
     transition: 1s ease;
+    margin:20px;
 
 }
 
