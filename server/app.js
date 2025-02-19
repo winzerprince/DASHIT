@@ -5,12 +5,14 @@ const path = require('path');
 const   sequelize = require('./config/db');
 //const models = require('./models')
 const app = express();
-const port = process.env.PORT || 3000;
+const cors = require('cors');
+const port = process.env.PORT || 5000;
 const homepage = require('./routes/pages');
+app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(express.static(path.join(__dirname, '../public')));
 app.use('/', homepage);
 app.use(express.json());
-app.use('/users', userRoutes);
+app.use('/api/users', userRoutes);
 
 
 

@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     try {
-        const user = await User.fingByPK(req.params.id)
+        const user = await User.findByPk(req.params.id)
         if (!user) return res.status(404).json({ message: 'User not found' });
         res.json(user);
     }
@@ -43,9 +43,10 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
     try {
         const { name, email, password } = req.body;
-        const user = await User.fingByPK(req.params.id);
+        const user = await User.findByPk(req.params.id);
         if (!user) return res.status(404).json({ message: 'User not found' });
-        await User.update({ name, email, password });
+        await User.update({ name, email, password }, { where: { id: req.params.id } });
+        res.json(user);
 
     }
     catch (err) {
@@ -56,7 +57,7 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     try {
-        const user = await User.findByPK(req.params);
+        const user = await User.findByPk(req.params);
         if (!user) return res.status(404).json({ message: 'User not found' });
         await user.destroy();
         res.json({ message: 'User deleted' });
