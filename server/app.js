@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
-const userRoutes = require('./routes/userRoutes')
+const userRoutes = require('./routes/userRoutes');
+const missionRoutes = require('./routes/missionRoutes');
 const path = require('path');
 const   sequelize = require('./config/db');
 //const models = require('./models')
@@ -13,6 +14,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use('/', homepage);
 app.use(express.json());
 app.use('/api/users', userRoutes);
+app.use('/api/missions', missionRoutes);
 
 
 

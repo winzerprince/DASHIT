@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./UserList.css";
 
-function UserList(){
+function UserList() {
     const [users, setUsers] = useState([]);
     useEffect(() => {
         axios.get("http://localhost:5000/api/users")
@@ -13,12 +14,33 @@ function UserList(){
     }, []);
 
     return (
-        <div>
-            <h2>User List</h2>
+        <div className="user-container">
+            <h1>User List</h1>
             {users.length === 0 ? (<p>No users found</p>) : (
-                <ul>
-                    {users.map(user => (<li key={user.id}>{user.name} - {user.email}</li>))}
-                </ul>)}
+                <table border="1" className="user-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {users.map((user) => (
+                            <tr key={user.id}>
+                                <td>{user.id}</td>
+                                <td>{user.name}</td>
+                                <td>{user.email} </td>
+                                <td>{ user.password}</td>
+
+                            </tr>
+                        ))}
+
+                    </tbody>
+
+                </table>)}
         </div>
     );
 };

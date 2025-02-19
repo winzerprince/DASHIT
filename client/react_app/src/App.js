@@ -1,4 +1,5 @@
 import UserList from './components/UserList';
+import "./components/UserList.css";
 
 function App() {
   return (

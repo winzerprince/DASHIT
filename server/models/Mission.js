@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const db = require('../config/db');
 
-const User = db.define('User', {
+const Mission = db.define('Mission', {
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -10,18 +10,26 @@ const User = db.define('User', {
     name: {
         type: DataTypes.STRING,
         allowNull: false,
-    },
-    email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true
-    },
-    password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    }
-}, {
-    timestamps: true // Adds createdAt and updatedAt fields 
-})
+        unique: true,
 
-module.exports = User;
+    },
+    description: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+
+
+    },
+    launch_date: {
+        type: DataTypes.DATE,
+        allowNull: false,
+    },
+    status: {
+        type: DataTypes.STRING,
+        defaultValue: 'Upcoming &#128511'
+
+
+    },
+
+}, { timestamps: true, });
+
+module.exports = Mission;
