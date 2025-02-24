@@ -1,159 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Missions</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body style="background-image:url(images/hd/rings2.jpg); background-position:center;background-size:cover " class="background-tint">
-        <h1>MISSIONS</h1>
-        <p>Welcome to the DASHIT Missions page! Here you can find various missions available for signup.</p>
-        <h2>Available Missions</h2>
-        <p>We offer a range of exciting missions, including:</p>
-        <ul>
-            <li>Exploration of Mars</li>
-            <li>Research on Alpha Centauri</li>
-            <li>Survey of Kepler-186f</li>
-        </ul>
-        <h2>Frequently Asked Questions</h2>
-        <p><strong>Q: How do I sign up for a mission?</strong></p>
-        <p>A: Simply fill out the form below after signing up for an account.</p>
-        <p><strong>Q: Are there any age restrictions?</strong></p>
-        <p>A: Yes, participants must be between the ages of 18 and 100.</p>
-        <hr>
-        <p>We at <em>DASHIT</em> make it a point to keep all our missions public and available for you
-            to signup for. Browse through our <del>suicide</del> missions catalog or fill in and submit the form 
-            below to register for a mission one you have <a href="signUp.html">Signed Up</a>
-        </p>
-        <blockquote quote href="signUp.html"><em ><q>It's time for you to fulfill that dream</q></em></blockquote>
-        <br/><br/><br/><br/>
 
-        <form id="form2">
-            <input type="email" id="email" reqired placeholder="Email"><br/>
-            <label for="age">Age</label>
-            <input type="range" id="age" min="18" max="100" oninput="output.value = age.value" required>
-            <output id="output"> 50</output><br />
-            <label for="planets" reqired>Choose your destination</label><br>
-            <select id="planets" name="planets">
-                <optgroup label="Habitable">
-                    <option value="Mars" selected>Mars</option>
-                    <option value="Alpha Centauri">Alpha Centauri</option>
-                    <option value="Kepler-186f">Kepler-186f</option>
-                    <option value="Gliese 667 Cc">Gliese 667 Cc</option>
-                    <option value="TRAPPIST-1d">TRAPPIST-1d</option>
-                    <option value="HD 85512">HD 85512</option>
-                    <option value="Mercury &#128520">Mercury&#128520</option>
-                    <option value="Luyten b">Luyten b</option>
-                    <option value="Proxima Centauri">Proxima Centauri</option>
-                    <option value="61 Virginis b">61 Virginis b</option>
-                    <option value="Tau Ceti e">Tau Ceti e</option>
-                    <option value="Tau Ceti f">Tau Ceti f</option>
-                    <option value="K2-72e">K2-72e</option>
-                    <option value="Kapteyn b">Kapteyn b</option>
-                    <option value="Sun">Sun</option>
+<head>
+    <title>Missions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="images/hd/rings2.jpg" as="image">
+</head>
 
-                </optgroup>
-                <optgroup label="Uninhabitable">
-                    <option value="Earth">Earth</option>
-                    <option value="Jupiter">Jupiter</option>
-                    <option value="Mercury">Mercury</option>
-                    <option value="Venus">Venus</option>
-                    <option value="Makemake">Makemake</option>
-                    <option value="Haumea">Haumea</option>
-                    <option value="Eris">Eris</option>
-                    <option value="WASP-76">WASP-76</option>
-                    <option value="PSR B1620-26">PSR B1620-26</option>
-                    <option value="Venus">Venus</option>
-                    <option value="TrES-2b">TrES-2b</option>
-                    <option value="Upsilon Andromedae b">Upsilon Andromedae b</option>
-                    <option value="Ceti Alpha 5">Ceti Alpha 5</option>
-                    <option value="KELT-9b">KELT-9b</option>
-                    <option value="Neptune">Neptune</option>
-                    <option value="OGLE-TR-56b">OGLE-TR-56b</option>
-                    <option value="Saturn">Saturn</option>
-                    <option value="Surprise me(You really trust us don't you &#128514)">
-                        Surprise me(You really trust us don't you &#128514)
-                    </option>
+<body style="background-image:url(images/hd/rings2.jpg); background-position:center;background-size:cover "
+    class="background-tint">
+    <h1>MISSIONS</h1>
+    <p>Welcome to the DASHIT Missions page! Here you can find various missions available for signup.</p>
+    <h2>Available Missions</h2>
+    <p>We offer a range of exciting missions, including:</p>
+    <ul>
+        <li>Exploration of Mars</li>
+        <li>Research on Alpha Centauri</li>
+        <li>Survey of Kepler-186f</li>
+    </ul>
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Q: How do I sign up for a mission?</strong></p>
+    <p>A: Simply fill out the form below after signing up for an account.</p>
+    <p><strong>Q: Are there any age restrictions?</strong></p>
+    <p>A: Yes, participants must be between the ages of 18 and 100.</p>
+    <hr>
+    <p>We at <em>DASHIT</em> make it a point to keep all our missions public and available for you
+        to signup for. Browse through our <del>suicide</del> missions catalog or fill in and submit the form
+        below to register for a mission one you have <a href="signUp.html">Signed Up</a>
+    </p>
+    <blockquote quote href="signUp.html"><em><q>It's time for you to fulfill that dream</q></em></blockquote>
+    <br /><br /><br /><br />
 
-                </optgroup>
+    <form id="form2">
+        <input type="email" id="email" reqired placeholder="Email"><br />
+        <label for="age">Age</label>
+        <input type="range" id="age" min="18" max="100" oninput="output.value = age.value" required>
+        <output id="output"> 50</output><br />
+        <label for="planets" reqired>Choose your destination</label><br>
+        <select id="planets" name="planets">
+            <optgroup label="Habitable">
+                <option value="Mars" selected>Mars</option>
+                <option value="Alpha Centauri">Alpha Centauri</option>
+                <option value="Kepler-186f">Kepler-186f</option>
+                <option value="Gliese 667 Cc">Gliese 667 Cc</option>
+                <option value="TRAPPIST-1d">TRAPPIST-1d</option>
+                <option value="HD 85512">HD 85512</option>
+                <option value="Mercury &#128520">Mercury&#128520</option>
+                <option value="Luyten b">Luyten b</option>
+                <option value="Proxima Centauri">Proxima Centauri</option>
+                <option value="61 Virginis b">61 Virginis b</option>
+                <option value="Tau Ceti e">Tau Ceti e</option>
+                <option value="Tau Ceti f">Tau Ceti f</option>
+                <option value="K2-72e">K2-72e</option>
+                <option value="Kapteyn b">Kapteyn b</option>
+                <option value="Sun">Sun</option>
 
-            </select><br/>
-            <label for="role">Role</label><br>
-            <input list="roles" id="role" >
-            <datalist id="roles">
-                <option value="Pilot" selected></option>
-                <option value="Engineer"></option>
-                <option value="Influencer"></option>
-                <option value="Homless"></option>
-                <option value="President"></option>
-                <option value="Explorer"></option>
-                <option value="Doctor"></option>
-            </datalist><br/><br>
-            <button  value="signup">Sign Up for Mission</button>
-            
-            
-            
-        </form>
+            </optgroup>
+            <optgroup label="Uninhabitable">
+                <option value="Earth">Earth</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Makemake">Makemake</option>
+                <option value="Haumea">Haumea</option>
+                <option value="Eris">Eris</option>
+                <option value="WASP-76">WASP-76</option>
+                <option value="PSR B1620-26">PSR B1620-26</option>
+                <option value="Venus">Venus</option>
+                <option value="TrES-2b">TrES-2b</option>
+                <option value="Upsilon Andromedae b">Upsilon Andromedae b</option>
+                <option value="Ceti Alpha 5">Ceti Alpha 5</option>
+                <option value="KELT-9b">KELT-9b</option>
+                <option value="Neptune">Neptune</option>
+                <option value="OGLE-TR-56b">OGLE-TR-56b</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Surprise me(You really trust us don't you &#128514)">
+                    Surprise me(You really trust us don't you &#128514)
+                </option>
 
-        <div>
-            <h2 style="text-align:center">Mission Exihiibtion </h2>
-            <figure style="float:left; "><img src="images/hd/rocker.jpg" class="img1"><figcaption>Our first mission to 
+            </optgroup>
+
+        </select><br />
+        <label for="role">Role</label><br>
+        <input list="roles" id="role">
+        <datalist id="roles">
+            <option value="Pilot" selected></option>
+            <option value="Engineer"></option>
+            <option value="Influencer"></option>
+            <option value="Homless"></option>
+            <option value="President"></option>
+            <option value="Explorer"></option>
+            <option value="Doctor"></option>
+        </datalist><br /><br>
+        <button value="signup">Sign Up for Mission</button>
+
+
+
+    </form>
+
+    <div>
+        <h2 style="text-align:center">Mission Exihiibtion </h2>
+        <figure style="float:left; "><img src="images/hd/rocker.jpg" class="img1">
+            <figcaption>Our first mission to
                 Alpha Centauri had its seeds planted on the moon.
-                
-            </figcaption></figure><p style="size:5px">
-                <h2 style="text-align:centre">Mission Alpha Centauri</h2>
-                Project Base: The Moon(Lunar launch
-                complex DASH-01)<br>
-                Objective: To explore and set up base at Alph Centauri<br>
-                <h3>Mission Overview</h3><br>
-                After years of questionable research specualative engineering and a shit tone of luck,
-                Dashit announced its first interstellar expedition: Mission Alpha Centauri. This 
-                historic journey marked humanity's firts attempt to reach our closest stellar neighbour
-                wiht zero plot armor.<br>
-                "Why launch from the moon?" You may ask, the answer is simple, zero atmospheric drag
-                , zero air pollution and zero taxes. We were able to pull this impeccable feat thanks
-                to DIzz-<del>nuts</del>Quantis Hyperdrive developed by our scientists for 
-                hyperspace travel using Quantum Hyperspatial Tachyonic Propagation(QHTP).
-                
-            </p>
-            
-        </div><br><br><br>
 
-        <div >
-            <figure style="float:right;"><img src="images/hd/astronaut1.jpg" class="img1">
-                <figcaption class="caption">
-                    Admiral Luna Vega on his routine space walk in preparation for the 45th mission to
-                     TrES-2b.
-            
-                </figcaption>
-            </figure>
+            </figcaption>
+        </figure>
+        <p style="size:5px">
+        <h2 style="text-align:centre">Mission Alpha Centauri</h2>
+        Project Base: The Moon(Lunar launch
+        complex DASH-01)<br>
+        Objective: To explore and set up base at Alph Centauri<br>
+        <h3>Mission Overview</h3><br>
+        After years of questionable research specualative engineering and a shit tone of luck,
+        Dashit announced its first interstellar expedition: Mission Alpha Centauri. This
+        historic journey marked humanity's firts attempt to reach our closest stellar neighbour
+        wiht zero plot armor.<br>
+        "Why launch from the moon?" You may ask, the answer is simple, zero atmospheric drag
+        , zero air pollution and zero taxes. We were able to pull this impeccable feat thanks
+        to DIzz-<del>nuts</del>Quantis Hyperdrive developed by our scientists for
+        hyperspace travel using Quantum Hyperspatial Tachyonic Propagation(QHTP).
+
+        </p>
+
+    </div><br><br><br>
+
+    <div>
+        <figure style="float:right;"><img src="images/hd/astronaut1.jpg" class="img1">
+            <figcaption class="caption">
+                Admiral Luna Vega on his routine space walk in preparation for the 45th mission to
+                TrES-2b.
+
+            </figcaption>
+        </figure>
+        <div>
             <div>
-                <div>
-            <p style="size:5px">
-            <h2 style="text-align:centre">Space Admirals</h2>
-            Project Base: Eris X5<br>
-            Objective: To command the future of interstellar travel through Admirals and Space Captains<br>
-            <h3>Mission Overview</h3><br>
-            With the ever growing increase in space stations, outposts and bases came the
-            need for a group of highly trained incredible individuals that could command and foster
-            the ever multiplying missions and becom the lead pioneers of these missionsl. We named these folk
-            space admirals<br>
-            <h4>The Admirals: Who are they?</h4>
-            The space admirals are a hand picked group of the finest minds, leaders,and strategists at DASHIT.
-            They are not just great at commanding space stations but also traversing the chaos of space.
-            These elites are chosen for their experience, bravery, and ability to remain calm even in the
-            worst situations.</p>
-                </div>
+                <p style="size:5px">
+                <h2 style="text-align:centre">Space Admirals</h2>
+                Project Base: Eris X5<br>
+                Objective: To command the future of interstellar travel through Admirals and Space Captains<br>
+                <h3>Mission Overview</h3><br>
+                With the ever growing increase in space stations, outposts and bases came the
+                need for a group of highly trained incredible individuals that could command and foster
+                the ever multiplying missions and becom the lead pioneers of these missionsl. We named these folk
+                space admirals<br>
+                <h4>The Admirals: Who are they?</h4>
+                The space admirals are a hand picked group of the finest minds, leaders,and strategists at DASHIT.
+                They are not just great at commanding space stations but also traversing the chaos of space.
+                These elites are chosen for their experience, bravery, and ability to remain calm even in the
+                worst situations.</p>
             </div>
-
         </div>
 
-      
-            
-        
-        
+    </div>
+
+    <div>
+        <video controls class="video">
+
+            <source src="videos/I Jumped From Space (World Record Supersonic Freefall).mp4" type="video/mp4">
+
+            Failed to load this video
+        </video>
 
 
-    </body>
+
+    </div>
+
+
+
+
+
+
+</body>
+
 </html>

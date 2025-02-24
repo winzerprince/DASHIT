@@ -65,6 +65,7 @@ button:active {
     }
 
 }
+
 .input,
 input[type="email"],
 select,
@@ -133,7 +134,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .background-tint {
-    background-color: rgba(0, 13, 200, 0.418);
+    background-color: rgba(71, 72, 80, 0.541);
     background-blend-mode: multiply;
 
 }
@@ -147,7 +148,7 @@ input[type="range"]::-moz-range-thumb {
     transition: opacity 1s;
     z-index: 1;
     transition: 1s ease;
-    margin:20px;
+    margin: 20px;
 
 }
 
@@ -206,4 +207,24 @@ input[type="range"]::-moz-range-thumb {
     50% {
         opacity: 1;
     }
+}
+
+.video {
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px rgba(248, 244, 244, 0.5);
+    width: 80%;
+    max-width: 800px;
+    display: block;
+    margin: 20px auto;
+    transition: transform 1s ease-in-out;
+
+
+
+}
+
+
+
+.video:hover {
+    transform: scale(1.1);
+
 }

@@ -25,7 +25,7 @@ const Mission = db.define('Mission', {
     },
     status: {
         type: DataTypes.STRING,
-        defaultValue: 'Upcoming &#128511'
+        defaultValue: 'Upcoming '
 
 
     },
